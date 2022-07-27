@@ -9,7 +9,6 @@
     <div class="dropdownBackground">
       <span class="arrow"></span>
     </div>
-
     <ul class="cool">
       <li>
         <a href="#">About Me</a>
@@ -236,8 +235,8 @@
     const coords = {
       height: dropdownCoords.height,
       width: dropdownCoords.width,
-      top: dropdownCoords.top,
-      left: dropdownCoords.left
+      top: dropdownCoords.top - navCoords.top,
+      left: dropdownCoords.left - navCoords.left
     }
     background.style.setProperty('height', `${coords.height}px`);
     background.style.setProperty('width', `${coords.width}px`);
