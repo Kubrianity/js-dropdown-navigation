@@ -5,7 +5,6 @@
   <title>Follow Along Nav</title>
 </head>
 <body>
-  <h2>Cool</h2>
   <nav class="top">
     <div class="dropdownBackground">
       <span class="arrow"></span>
@@ -233,6 +232,16 @@
     const dropdown = this.querySelector('.dropdown');
     const dropdownCoords = dropdown.getBoundingClientRect();
     const navCoords = nav.getBoundingClientRect();
+
+    const coords = {
+      height: dropdownCoords.height,
+      width: dropdownCoords.width,
+      top: dropdownCoords.top,
+      left: dropdownCoords.left
+    }
+    background.style.setProperty('height', `${coords.height}px`);
+    background.style.setProperty('width', `${coords.width}px`);
+    background.style.setProperty('transform', `translate(${coords.left}px, ${coords.top}px`);
   }
   function handleLeave() {
     this.classList.remove('trigger-enter', 'trigger-enter-active');
