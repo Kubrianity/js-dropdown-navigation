@@ -8,3 +8,6 @@ Width and height of those drop-down menus are changed by the content of them.<br
 
 View demo [here](https://kubrianity.github.io/js-dropdown-navigation/)
 
+### Acknowledgement
+This project is one of the JavaScript30 Challenges by Wes Bos
+
